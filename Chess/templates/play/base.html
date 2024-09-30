@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}{% endblock title %}
+
+{% block main %}
+    <form method="POST">
+        {% csrf_token %}
+        <div id="tbl" class="play-layout">
+            <div class="play-header">
+                <h1>asdfasdf</h1>
+            </div>
+            <div class="">
+                {% block content %}{% endblock content %}
+            </div>
+        
+        </div>
+
+    </form>
+
+
+{% endblock main %}

@@ -1,0 +1,33 @@
+{% extends "home/base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    {% load static %}
+    <form method="POST">
+        {% csrf_token %}
+        <div class="layout">
+            <div class="index-component">
+                {% if user.username %}
+                    <h1>{{user.username}}</h1>
+                {% else %}
+                    <h1>Guess</h1>
+                {% endif %}
+                <div class="index-block">
+                    <div class="index-broad">
+                        <img src="{% static "images/standardboard1.png" %}" class="index-broad-img"/>
+                    </div>
+            
+                    <div class="index-intro">
+                        <div class="intro-button-wrap">
+                            <a href="{% url "play" %}" name="playonl" class="intro-play-onl-button cc-button-component">Play Online</a>
+                            <a href="" name="playcom" class="intro-play-com-button cc-button-component">Play Computer</a>
+                            <a href="" name="playfriend" class="intro-play-com-button cc-button-component">Play a Friend</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+    </form>
+
+{% endblock  %}

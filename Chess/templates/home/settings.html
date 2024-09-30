@@ -1,0 +1,47 @@
+{% extends "home/base.html" %}
+{% block title %}Profile - Settings{% endblock title %}
+
+{% block content %}
+{% load static %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="base-container">
+        <div class="layout-component">
+            <div class="layout-column-one">
+                <div class="section-layout">
+                    <a href="{% url 'settings' %}" class="settings-menu-link settings-menu-link-active">
+                        <span class="settings-link-name">Profile</span>
+                    </a>
+                    <a href="" class="settings-menu-link">
+                        <span class="settings-link-name">Password</span>
+                    </a>
+                    <a href="" class="settings-menu-link">
+                        <span class="settings-link-name">History</span>
+                    </a>
+                </div>
+            </div>
+            <div class="layout-column-two">
+                <div class="section-layout profile-header-container">
+                    <div class="profile-header-info">
+                        <div class="profile-header-avatar">
+                            <img src="{% static "images/noavatar.png" %}" style="width: 160px; height: 160px border-radius: .5rem;"/>
+                        </div>
+                        <div class="profile-header-details">
+                            <h1> {{user.username}} </h1>    
+                        </div>
+                    </div>
+                </div>
+                <div class="section-layout">
+                    <div class="profile-header-info">
+                        <div class="profile-header-details">
+                            <h1> {{user.username}} </h1>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+{% endblock content %}
