@@ -1,4 +1,12 @@
-
+:root {
+    --primary_button-color: #81b64c;
+    --primary_button-color_hover: #a3d160;
+    --background_header-color: #262421;
+    --backround_content-color: #312e2b;
+    --btnLogin-color_hover: #474441;
+    --btnIntro-color:#8e9a83;
+    --btnIntro-color_hover: #848d77;
+}
 .home-layout{
     display: block;
     unicode-bidi: isolate;
@@ -14,7 +22,7 @@
 
 #tb.home-header{
     display: flex;
-    background-color: #262421;
+    background-color: var(--background_header-color);
     margin: 0 auto;
     max-width: 108.2rem;
 }
@@ -57,7 +65,7 @@
     display: inline-grid;
     padding: .4rem 1.6rem;
     font-size: 1.4rem;
-    background-color: #81b64c;
+    background-color: var(--primary_button-color);
     border-radius: .5rem;
     max-height: 4rem;
     width: 5.5rem;
@@ -65,14 +73,14 @@
 }
 
 .login-btn:hover {
-    background-color: #a3d160;
+    background-color: var(--primary_button-color_hover);
 }
 
 .signup-btn {
     display: inline-grid;
     padding: .4rem 1.6rem;
     font-size: 1.4rem;
-    background-color: #312e2b;
+    background-color: var(--backround_content-color);
     border-radius: .5rem;
     max-height: 4rem;
     width: 5.5rem;
@@ -80,14 +88,14 @@
 }
 
 .signup-btn:hover {
-    background-color: #474441;
+    background-color: var(--btnLogin-color_hover);
 }
 
 .logout-btn{
     display: inline-grid;
     padding: .4rem 1.6rem;
     font-size: 1.4rem;
-    background-color: #312e2b;
+    background-color: var(--backround_content-color);
     border-radius: .5rem;
     max-height: 4rem;
     width: 10rem;
@@ -95,7 +103,7 @@
 }
 
 .logout-btn:hover {
-    background-color: #474441;
+    background-color: var(--btnLogin-color_hover);
 }
 
 .index-component{
@@ -148,14 +156,14 @@
     display: inline-grid;
     padding: .4rem 1.6rem;
     font-size: 2rem;
-    background-color: #81b64c;
+    background-color: var(--primary_button-color);
     border-radius: .5rem;
     width: 25rem;
     height: 5rem;
 }
 
 .intro-play-onl-button:hover {
-    background-color: #a3d160;
+    background-color: var(--primary_button-color_hover);
     box-shadow: 0rem 0rem 2rem .5rem rgba(255, 255, 255, 0.195);
 }
 
@@ -165,14 +173,14 @@
     margin-top: 2rem;
     padding: .4rem 1.6rem;
     font-size: 2rem;
-    background-color: #8e9a83;
+    background-color: var(--btnIntro-color);
     border-radius: .5rem;
     width: 25rem;
     height: 5rem;
 }
 
 .intro-play-com-button:hover {
-    background-color: #848d77;
+    background-color: var(--btnIntro-color_hover);
     box-shadow: 0rem 0rem 2rem .5rem rgba(255, 255, 255, 0.195);
 }
 
@@ -188,7 +196,7 @@
 .login-container{
     justify-content: center;
     align-items: center;
-    background-color: #262421; 
+    background-color: var(--background_header-color); 
     padding: 1rem 1.5rem 1.5rem 1.5rem;
     border-radius: .5rem; 
     width: 300px; 
@@ -227,7 +235,7 @@
     display: inline-grid;
     padding: .4rem 1.6rem;
     font-size: 1.4rem;
-    background-color: #81b64c;
+    background-color: var(--primary_button-color);
     border-radius: .5rem;
     max-height: 4rem;
     width: 100%;
@@ -235,7 +243,7 @@
 }
 
 .login-button-group > .login-btn:hover{
-    background-color: #a3d160;
+    background-color: var(--primary_button-color_hover);
 }
 
 .login-button-group > .signup-btn{
@@ -362,7 +370,7 @@
 
 #tbl.play-header{
     display: flex;
-    background-color: #262421;
+    background-color: var(--background_header-color);
     margin: 0 auto;
     max-height: 108.2rem;
 }
